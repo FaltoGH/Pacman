@@ -4,7 +4,7 @@ Available on Google Play: https://play.google.com/store/apps/details?id=com.zaga
 
 ![Google play QR-code][1]
 
-[1]: https://raw.github.com/zagayevskiy/Pacman/master/GooglePlay.png
+[1]: app/GooglePlay.png
 
 The MIT License (MIT)
 
