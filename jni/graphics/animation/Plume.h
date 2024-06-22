@@ -8,7 +8,7 @@
 #ifndef PLUME_H_
 #define PLUME_H_
 
-
+#include <string.h>
 #include "graphics/IRenderable.h"
 #include "managers/Art.h"
 
@@ -24,8 +24,8 @@ public:
 
 private:
 
-	static const GLfloat FI_DELTA = 0.001f;
-	static const GLfloat MAX_FI_ABS = 1.0f;
+	constexpr static const GLfloat FI_DELTA = 0.001f;
+	constexpr static const GLfloat MAX_FI_ABS = 1.0f;
 
 	struct Point{
 		float x;

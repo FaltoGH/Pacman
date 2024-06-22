@@ -57,8 +57,8 @@ void Plume::initGraphics(){
 		for(int j = 0; j < 4; ++j){
 			maskTexCoords[i*4 + j] = new GLfloat[12];
 			GLfloat temp[12] = {
-				j / 4.0, i / 4.0, (j + 1.0) / 4.0, i / 4.0, (j + 1.0) / 4.0, (i + 1.0) / 4.0,
-				(j + 1.0) / 4.0, (i + 1.0) / 4.0, j / 4.0, (i + 1.0) / 4.0, j / 4.0, i / 4.0
+				static_cast<GLfloat>(j / 4.0), static_cast<GLfloat>(i / 4.0), static_cast<GLfloat>((j + 1.0) / 4.0), static_cast<GLfloat>(i / 4.0), static_cast<GLfloat>((j + 1.0) / 4.0), static_cast<GLfloat>((i + 1.0) / 4.0),
+				static_cast<GLfloat>((j + 1.0) / 4.0), static_cast<GLfloat>((i + 1.0) / 4.0), static_cast<GLfloat>(j / 4.0), static_cast<GLfloat>((i + 1.0) / 4.0), static_cast<GLfloat>(j / 4.0), static_cast<GLfloat>(i / 4.0)
 			};
 			memcpy(maskTexCoords[i*4 + j], temp, 12*sizeof(GLfloat));
 		}

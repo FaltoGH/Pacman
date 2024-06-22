@@ -78,6 +78,7 @@ bool CheckBox::action(Action act, float _x, float _y){
 			case ACTION_UP:
 				value = !value;
 			break;
+default:break;
 		}
 
 	}

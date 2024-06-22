@@ -19,7 +19,7 @@ public:
 	static const int DEFAULT_FOOD_COST = 10;
 	static const int MIN_FOOD_COST = 1;
 	static const int FOOD_COST_DELTA = 1;
-	static const double FOOD_COST_CHANGE_TIME_DELTA = 15000.0;
+	constexpr static const double FOOD_COST_CHANGE_TIME_DELTA = 15000.0;
 
 	static void save();
 	static void load();

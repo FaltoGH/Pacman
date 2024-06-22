@@ -7,7 +7,7 @@
 
 #ifndef ART_H_
 #define ART_H_
-
+#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

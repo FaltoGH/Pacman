@@ -7,7 +7,7 @@
 
 #ifndef ANIMATION_H_
 #define ANIMATION_H_
-
+#include <string.h>
 #include <stdlib.h>
 
 #include <GLES2/gl2.h>

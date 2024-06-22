@@ -7,7 +7,7 @@
 
 #ifndef STORE_H_
 #define STORE_H_
-
+#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <jni.h>

@@ -487,7 +487,7 @@ void Art::loadTextures(){
 	char buffer[MAX_PATH];
 	texturesSources = new Texture*[TEXTURES_COUNT];
 	sprintf(buffer, texturesPath, "tiles.png");
-	LOGI(buffer);
+	LOGI("%s",buffer);
 	texturesSources[TEXTURE_TILES] = loadPng(buffer);
 	sprintf(buffer, texturesPath, "buttons.png");
 	texturesSources[TEXTURE_BUTTONS] = loadPng(buffer);

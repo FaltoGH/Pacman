@@ -110,6 +110,7 @@ extern "C" {
 		Audio::free();
 		Art::free(env);
 		LOGI("native free OK");
+return 0;
 	}
 
 }

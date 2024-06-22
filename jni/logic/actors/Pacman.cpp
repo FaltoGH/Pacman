@@ -410,9 +410,10 @@ void Pacman::render(double elapsedTime){
 
 	//x, y, tx1, ty1, tx2, ty2, tx3, ty3
 	GLsizei stride = 8 * sizeof(GLfloat);
-
-	glVertexAttribPointer(shiftVertexHandle, 2, GL_FLOAT, GL_FALSE, stride, (void*)(vertexOffset));
-	glVertexAttribPointer(shiftTextureHandle, 2, GL_FLOAT, GL_FALSE, stride, (void*) (textureOffset));
+void* vvertexOffset = reinterpret_cast<void*>(vertexOffset);
+void* vtextureOffset = reinterpret_cast<void*>(textureOffset);
+	glVertexAttribPointer(shiftVertexHandle, 2, GL_FLOAT, GL_FALSE, stride, vvertexOffset);
+	glVertexAttribPointer(shiftTextureHandle, 2, GL_FLOAT, GL_FALSE, stride, vtextureOffset);
 
 	glEnableVertexAttribArray(shiftVertexHandle);
 	glEnableVertexAttribArray(shiftTextureHandle);

@@ -73,6 +73,7 @@ bool RectButton::action(Action act, float _x, float _y){
 			case ACTION_UP:
 				pressed = false;
 			break;
+default:break;
 		}
 
 	}else{

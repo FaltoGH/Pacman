@@ -7,7 +7,7 @@
 
 #ifndef LABEL_H_
 #define LABEL_H_
-
+#include <string.h>
 #include "stdlib.h"
 
 #include "managers/Art.h"
